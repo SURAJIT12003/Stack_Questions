@@ -1,0 +1,15 @@
+//Four condition Occur - 
+    /*                       (loop start)      (condition)[Break this condition]
+
+     
+    1) Next Greater Right -    N-1                cur < st.peek 
+      *Ex - 2,1,5,6,4,3 --  here  5 NGR 6 
+ 
+    2) Next Greater Left -      0                 cur < st.peek
+      *Ex - 2,1,5,6,4,3 --  here  4 NGL 6      (previ greater element *)
+
+    3) Next Smaller Right -      N-1                cur > st.peek
+        *Ex - 2,1,5,6,4,3 -- here 5 NSR 4
+
+    4) Next Smaller Left -      0                   cur>st.peek
+        *Ex - 2,1,5,6,4,3 - here  5 NSL 1     (previ smaller element *) 
